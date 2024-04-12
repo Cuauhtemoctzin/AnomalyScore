@@ -1,9 +1,6 @@
 ### Anomaly scoring for multivariate time series
 
-Compute an anomaly score for multivariate time series based on a knn algorithm. 
-Different computations of distances between time series are provided. 
-It contains functions to compute the scores for time series with daily profiles and run a regression tree to explain odd periods.
-
+This Package helps to compute anomaly scores for multivariate time series. The scores are defined based on a KNN algorithm using different approaches to determine distances between time series.
 
 The last version of the package can be installed via:
 
