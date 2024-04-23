@@ -109,7 +109,7 @@ DEcortNorm=function(k, S1, S2){
     S2=S2[-insna]
   }
   Euclidean_distance= sum(  (S1-S2)^2,na.rm=T )^.5 
-  abs_dif=abs( sum(  (S1-S2),na.rm=T ) )
+  abs_dif=sum( abs(   (S1-S2) )  ,na.rm=T  )
   if(length(S1)>1 & length(S2)>1){
     if( var(S1,na.rm = T)==0|var(S2,na.rm = T)==0  ){
       dist= ( 1+ length(insna)/(origlenn- length(insna)))*Euclidean_distance/abs_dif
