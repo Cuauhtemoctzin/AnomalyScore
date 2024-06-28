@@ -73,7 +73,7 @@ DRfitmse <- function(xM, responseindex, ordersV, indexV){
   xlagM=multilagmatrix(xM, responseindex, ordersV, indexV)
   
   if(dim(xlagM)[2]!=1 ){
-    An <- solve(t(xlagM[, -1]) %*% xlagM[, -1]) %*% t(xlagM[, -1]) %*% xlagM[, 1]
+    An <- ginv(t(xlagM[, -1]) %*% xlagM[, -1]) %*% t(xlagM[, -1]) %*% xlagM[, 1]
     preV <- xlagM[, -1] %*% An
     resV <- xM[(max(ordersV) + 1):n, responseindex] - preV
     MSE <- sum(resV^2) / length(resV)
