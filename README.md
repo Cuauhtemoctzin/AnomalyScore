@@ -7,3 +7,5 @@ The last version of the package can be installed via:
 ```
 devtools::install_github("Cuauhtemoctzin/AnomalyScore")
 ```
+
+The development of this package was supported by the UK Research and Innovation (UKRI) Engineering and Physical Sciences Research Council (EPSRC) under the project titled "Reducing End Use Energy Demand in Commercial Settings Through Digital Innovation," grant number EP/T025964/1.
