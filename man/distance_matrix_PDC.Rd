@@ -4,13 +4,11 @@
 \alias{distance_matrix_PDC}
 \title{Distance matrix from a partial directed coherence measure (PDC)}
 \usage{
-distance_matrix_PDC(unit, kvar, ar, period)
+distance_matrix_PDC(unit, ar, period)
 }
 \arguments{
 \item{unit}{A matrix representing a multivariate time series where each
 column is a univariate time series.}
-
-\item{kvar}{Dimension of the multivariate time series.}
 
 \item{ar}{Integer vector containing all the lags considered for the
 vector autoregressive model}
@@ -32,7 +30,7 @@ causality between the series.
 X=matrix( rnorm(2000), ncol=10  )
 ar=c(1, 2)
 period=10
-distance_matrix_PDC(  unit=X, kvar=10, ar,  period )
+distance_matrix_PDC(  unit=X, ar,  period )
 }
 \seealso{
 Guillermo Granados, and Idris Eckley. “Building Electricity

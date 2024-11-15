@@ -25,18 +25,18 @@ sqnorms<-function(M,A){ sqrt(abs( Conj( M) %*% A %*% M ) )  }
 
 #' @param Unit A Matrix containing the multivariate time series. Each column 
 #' represents a univariate time series.
-#' @param kvar Dimension of the multivariate time series. 
 #' @param ar  Integer vector containing all the lags considered for the
 #' vector autoregressive model
-#' @return An real array of dimensions, kvar, kvar, n, where n is the number of 
+#' @return An real array of dimensions, ncol(unit), ncol(unit), n, where n is the number of 
 #' frequencies at which the PDC is estimated.   
 #'  
 #' @export
 #' @examples
 #' X=matrix( rnorm(2000), ncol=10  )
 #' ar=c(1, 2)
-#' matrix_PDC(X, kvar=10, ar)
-matrix_PDC=function(  unit, kvar, ar ){
+#' matrix_PDC(X, ar)
+matrix_PDC=function(  unit, ar ){
+  kvar=ncol(unit)
   order=length(ar)
   model = marima::define.model(kvar=kvar ,  ar=ar  )
   arp = model$ar.pattern

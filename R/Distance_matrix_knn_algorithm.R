@@ -211,7 +211,6 @@ distance_matrix_wasserstein=function(  unit ){
 #'
 #' @param unit A matrix representing a multivariate time series where each 
 #' column is a univariate time series. 
-#' @param kvar Dimension of the multivariate time series. 
 #' @param ar  Integer vector containing all the lags considered for the
 #' vector autoregressive model
 #' @param period Integer referencing the index of the frequency to use for the
@@ -227,14 +226,13 @@ distance_matrix_wasserstein=function(  unit ){
 #' X=matrix( rnorm(2000), ncol=10  )
 #' ar=c(1, 2)
 #' period=10
-#' distance_matrix_PDC(  unit=X, kvar=10, ar,  period )
-distance_matrix_PDC=function(  unit, kvar, ar,  period ){
-  #kvar	dimension of time series
+#' distance_matrix_PDC(  unit=X, ar,  period )
+distance_matrix_PDC=function(  unit, ar,  period ){
   #ar	autoregresssion definition.  
   # period refers to the number of time points it comprises a period of interest
   # i.e., if the sampling is per minute, and each hour cycle is the period of interest
   # period=(length of series)/60 
-  PDC_mat= matrix_PDC(unit, kvar, ar )
+  PDC_mat= matrix_PDC(unit, ar )
   myfreq=round( period,0)# ensure the period is an integer
   
   A=abs(PDC_mat[,,myfreq] )
