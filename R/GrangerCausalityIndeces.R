@@ -45,8 +45,8 @@
 #' @return the matrix of all explanatory lagged variables in the
 #'                 DR model. The sequence of the lagged variables in 'lagM'
 #                 is determined by indexV.
-#' @seealso Kugiumtzis, D. “Direct-Coupling Information Measure from Nonuniform
-#' Embedding.” Physical Review E 87, no. 6 (June 25, 2013): 062918. 
+#' @seealso Kugiumtzis, D. "Direct-Coupling Information Measure from Nonuniform
+#' Embedding." Physical Review E 87, no. 6 (June 25, 2013): 062918. 
 #' \doi{10.1103/PhysRevE.87.062918}
 #'  
 #' @export
@@ -94,9 +94,9 @@ DRfitmse <- function(xM, responseindex, ordersV, indexV){
 #' @return the matrix of all explanatory lagged variables in the
 #'                 DR model. The sequence of the lagged variables in 'lagM'
 #                 is determined by indexV.
-#' @seealso I. Vlachos and D. Kugiumtzis, “Backward-in-time selection of the
-#'  order of dynamic regression prediction model,” J. Forecast., 
-#'  vol. 32, pp. 685–701, 2013.
+#' @seealso I. Vlachos and D. Kugiumtzis, "Backward-in-time selection of the
+#'  order of dynamic regression prediction model," J. Forecast., 
+#'  vol. 32, pp. 685-701, 2013.
 #'  
 #' @export
 
@@ -188,10 +188,10 @@ mBTS <- function(xM, responseindex, pmax) {
 #' @param pmax maximum order(lag) of the VAR model to be considered
 #' @return the matrix of all the conditional Granger causality index across 
 #' the series of a multivariate set.
-#' @seealso Siggiridou, Elsa, and Dimitris Kugiumtzis. “Granger Causality
+#' @seealso Siggiridou, Elsa, and Dimitris Kugiumtzis. "Granger Causality
 #'  in Multivariate Time Series Using a Time-Ordered Restricted Vector 
-#'  Autoregressive Model.” IEEE Transactions on Signal Processing 64, 
-#'  no. 7 (April 2016): 1759–73. \doi{10.1109/TSP.2015.2500893}
+#'  Autoregressive Model." IEEE Transactions on Signal Processing 64, 
+#'  no. 7 (April 2016): 1759-73. \doi{10.1109/TSP.2015.2500893}
 #'  
 #' @export
 
@@ -378,8 +378,8 @@ mBTSRGPDC<- function(xM, pmax, freqs){
 #'           the augmented mixed embedding vector wemb w, I(x^F; w,wemb).
 #'           5. The ration of 3. and 4.: I(x^F; w| wemb)/I(x^F; w,wemb)
 #'           
-#' @seealso Kugiumtzis, D. “Direct-Coupling Information Measure from Nonuniform
-#' Embedding.” Physical Review E 87, no. 6 (June 25, 2013): 062918. 
+#' @seealso Kugiumtzis, D. "Direct-Coupling Information Measure from Nonuniform
+#' Embedding." Physical Review E 87, no. 6 (June 25, 2013): 062918. 
 #' \doi{10.1103/PhysRevE.87.062918}
 #'  
 #' @export

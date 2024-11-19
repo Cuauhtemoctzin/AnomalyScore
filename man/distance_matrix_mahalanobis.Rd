@@ -23,7 +23,7 @@ X=matrix( rnorm(2000), ncol=10  )
 distance_matrix_mahalanobis(unit=X )
 }
 \seealso{
-Prekopcsák, Zoltán, and Daniel Lemire. “Time Series Classification
-by Class-Specific Mahalanobis Distance Measures.” Advances in Data Analysis
-and Classification 6, no. 3 (October 2012): 185–200. \doi{10.1007/s11634-012-0110-6}
+Prekopcsak, Zoltan, and Daniel Lemire. "Time Series Classification
+by Class-Specific Mahalanobis Distance Measures." Advances in Data Analysis
+and Classification 6, no. 3 (October 2012): 185-200. \doi{10.1007/s11634-012-0110-6}
 }

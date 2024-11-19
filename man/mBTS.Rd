@@ -21,7 +21,7 @@ DR model. The sequence of the lagged variables in 'lagM'
 modified Back-in-time Selection for vector AR parameters estimation
 }
 \seealso{
-I. Vlachos and D. Kugiumtzis, “Backward-in-time selection of the
-order of dynamic regression prediction model,” J. Forecast.,
-vol. 32, pp. 685–701, 2013.
+I. Vlachos and D. Kugiumtzis, "Backward-in-time selection of the
+order of dynamic regression prediction model," J. Forecast.,
+vol. 32, pp. 685-701, 2013.
 }

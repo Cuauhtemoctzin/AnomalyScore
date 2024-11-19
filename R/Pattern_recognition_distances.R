@@ -11,9 +11,9 @@
 #' @param S1 A vector representing a univariate time series
 #' @param S2 A second vector representing a univariate time series
 #' @return A coefficient in the interval \eqn{[-1,1]} representing the lag 1 correlation
-#' @seealso Douzal-Chouakria, Ahlame, and Cécile Amblard. “Classification
-#'  Trees for Time Series.” Pattern Recognition 45, no. 3 (March 2012): 
-#'  1076–91. \doi{10.1016/j.patcog.2011.08.018}
+#' @seealso Douzal-Chouakria, Ahlame, and Cecile Amblard. "Classification
+#'  Trees for Time Series." Pattern Recognition 45, no. 3 (March 2012): 
+#'  1076-91. \doi{10.1016/j.patcog.2011.08.018}
 #'  
 #' @export
 #' @examples
@@ -48,9 +48,9 @@ Cort=function(S1, S2){
 #' on the other hand, when $k=6$ the distance is mainly determined by the value 
 #' of the temporal correlation $Cort$.
 #' @return a non-zero value
-#' @seealso Douzal-Chouakria, Ahlame, and Cécile Amblard. “Classification
-#'  Trees for Time Series.” Pattern Recognition 45, no. 3 (March 2012): 
-#'  1076–91. \doi{10.1016/j.patcog.2011.08.018}
+#' @seealso Douzal-Chouakria, Ahlame, and Cecile Amblard. "Classification
+#'  Trees for Time Series." Pattern Recognition 45, no. 3 (March 2012): 
+#'  1076-91. \doi{10.1016/j.patcog.2011.08.018}
 #'  
 #' @export
 #' @examples
@@ -91,7 +91,7 @@ DEcort=function(k, S1, S2){
 #' on the other hand, when $k=6$ the distance is mainly determined by the value 
 #' of the temporal correlation $Cort$.
 #' @return a non-zero value
-#' @seealso Granados-Garcia, and Idris Eckley. “Building Electricity Demand 
+#' @seealso Granados-Garcia, and Idris Eckley. "Building Electricity Demand 
 #' Benchmarking via a Regression Trees on Anomaly Scores"
 #'  
 #' @export
@@ -146,9 +146,9 @@ DEcortNorm=function(k, S1, S2){
 #' @param maxwindow the maximum shift allowed between time series points.
 #' @return  A non-negative value representing the distance between two time 
 #' series
-#' @seealso Douzal-Chouakria, Ahlame, and Cécile Amblard. “Classification
-#'  Trees for Time Series.” Pattern Recognition 45, no. 3 (March 2012): 
-#'  1076–91. \doi{10.1016/j.patcog.2011.08.018}
+#' @seealso Douzal-Chouakria, Ahlame, and Cecile Amblard. "Classification
+#'  Trees for Time Series." Pattern Recognition 45, no. 3 (March 2012): 
+#'  1076-91. \doi{10.1016/j.patcog.2011.08.018}
 #'  
 #' @export
 #' @examples

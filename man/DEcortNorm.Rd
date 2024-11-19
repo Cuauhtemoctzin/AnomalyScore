@@ -36,6 +36,6 @@ k=1
 DEcortNorm(k,S1, S2)
 }
 \seealso{
-Granados-Garcia, and Idris Eckley. “Building Electricity Demand
+Granados-Garcia, and Idris Eckley. "Building Electricity Demand
 Benchmarking via a Regression Trees on Anomaly Scores"
 }

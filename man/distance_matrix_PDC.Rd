@@ -33,6 +33,5 @@ period=10
 distance_matrix_PDC(  unit=X, ar,  period )
 }
 \seealso{
-Guillermo Granados, and Idris Eckley. “Building Electricity
-Demand Benchmarking via a Regression Trees on Anomaly Scores”
+Guillermo Granados, and Idris Eckley. "Electricity Demand of Buildings Benchmarked via Regression Trees on Nearest Neighbors Anomaly Scores"
 }

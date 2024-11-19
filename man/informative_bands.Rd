@@ -9,7 +9,7 @@ informative_bands(allbands, x)
 \arguments{
 \item{allbands}{a list with two elements the lowerbounds of all (n)(n-1)/2
 pairs and the upperbounds of the pairwise bands.
-Result of the function all_bands()}
+Result of the function all_bands}
 
 \item{x}{A vector  representing a univariate time series}
 }

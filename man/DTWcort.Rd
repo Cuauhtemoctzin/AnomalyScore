@@ -40,7 +40,7 @@ DTWcort(k,S1, S2,maxwindow)
 
 }
 \seealso{
-Douzal-Chouakria, Ahlame, and Cécile Amblard. “Classification
-Trees for Time Series.” Pattern Recognition 45, no. 3 (March 2012):
-1076–91. \doi{10.1016/j.patcog.2011.08.018}
+Douzal-Chouakria, Ahlame, and Cecile Amblard. "Classification
+Trees for Time Series." Pattern Recognition 45, no. 3 (March 2012):
+1076-91. \doi{10.1016/j.patcog.2011.08.018}
 }

@@ -16,9 +16,9 @@
 #' on the other hand, when $k=6$ the distance is mainly determined by the value 
 #' of the temporal correlation $Cort$.
 #' @return a matrix with pairwise distances
-#' @seealso Douzal-Chouakria, Ahlame, and Cécile Amblard. “Classification
-#'  Trees for Time Series.” Pattern Recognition 45, no. 3 (March 2012): 
-#'  1076–91. \doi{10.1016/j.patcog.2011.08.018}
+#' @seealso Douzal-Chouakria, Ahlame, and Cecile Amblard. "Classification
+#'  Trees for Time Series." Pattern Recognition 45, no. 3 (March 2012): 
+#'  1076-91. \doi{10.1016/j.patcog.2011.08.018}
 #'  
 #' @export
 #' @examples
@@ -53,8 +53,7 @@ distance_matrix_cort=function(k,unit){
 #' on the other hand, when $k=6$ the distance is mainly determined by the value 
 #' of the temporal correlation $Cort$.
 #' @return a matrix with pairwise distances
-#' @seealso Guillermo Granados, and Idris Eckley. “Building Electricity
-#'  Demand Benchmarking via a Regression Trees on Anomaly Scores” 
+#' @seealso Guillermo Granados, and Idris Eckley. "Electricity Demand of Buildings Benchmarked via Regression Trees on Nearest Neighbors Anomaly Scores" 
 #'  
 #' @export
 #' @examples
@@ -215,8 +214,7 @@ distance_matrix_wasserstein=function(  unit ){
 #' sampling is per minute, and each hour cycle is the period of interest
 #  period=(length of series)/60 
 #' @return a matrix with pairwise distances
-#' @seealso Guillermo Granados, and Idris Eckley. “Building Electricity
-#'  Demand Benchmarking via a Regression Trees on Anomaly Scores”
+#' @seealso Guillermo Granados, and Idris Eckley. "Electricity Demand of Buildings Benchmarked via Regression Trees on Nearest Neighbors Anomaly Scores"
 #'  
 #' @export
 #' @examples
@@ -251,9 +249,9 @@ distance_matrix_PDC=function(  unit, ar,  period ){
 #' @param unit A matrix representing a multivariate time series where each 
 #' column is a univariate time series. 
 #' @return a matrix with pairwise distances
-#' @seealso Prekopcsák, Zoltán, and Daniel Lemire. “Time Series Classification
-#' by Class-Specific Mahalanobis Distance Measures.” Advances in Data Analysis
-#' and Classification 6, no. 3 (October 2012): 185–200. \doi{10.1007/s11634-012-0110-6}
+#' @seealso Prekopcsak, Zoltan, and Daniel Lemire. "Time Series Classification
+#' by Class-Specific Mahalanobis Distance Measures." Advances in Data Analysis
+#' and Classification 6, no. 3 (October 2012): 185-200. \doi{10.1007/s11634-012-0110-6}
 #'  
 #' @export
 #' @examples
@@ -287,10 +285,10 @@ distance_matrix_mahalanobis=function(  unit ){
 #' column is a univariate time series. 
 #' @param pmax maximum order(lag) of the VAR model to be considered
 #' @return a matrix with pairwise distances
-#' @seealso Siggiridou, Elsa, and Dimitris Kugiumtzis. “Granger Causality 
+#' @seealso Siggiridou, Elsa, and Dimitris Kugiumtzis. "Granger Causality 
 #' in Multivariate Time Series Using a Time-Ordered Restricted Vector
-#'  Autoregressive Model.” IEEE Transactions on Signal Processing 64, no. 
-#'  7 (April 2016): 1759–73. \doi{10.1109/TSP.2015.2500893}
+#'  Autoregressive Model." IEEE Transactions on Signal Processing 64, no. 
+#'  7 (April 2016): 1759-73. \doi{10.1109/TSP.2015.2500893}
 #'  
 #' @export
 #' @examples
@@ -332,9 +330,9 @@ distance_matrix_CGCI=function(unit, pmax){
 #  period=(length of series)/60 
 #' @return a matrix with pairwise distances
 #' @seealso Siggiridou, Elsa, Vasilios K. Kimiskidis, and Dimitris Kugiumtzis.
-#' “Dimension Reduction of Frequency-Based Direct Granger Causality Measures
-#' on Short Time Series.” Journal of Neuroscience Methods 289 (September 2017)
-#' : 64–74. \doi{10.1016/j.jneumeth.2017.06.021}
+#' "Dimension Reduction of Frequency-Based Direct Granger Causality Measures
+#' on Short Time Series." Journal of Neuroscience Methods 289 (September 2017)
+#' : 64-74. \doi{10.1016/j.jneumeth.2017.06.021}
 
 #'  
 #' @export
@@ -375,8 +373,8 @@ distance_matrix_RGPDC=function(unit, pmax, period){
 #'           for the termination criterion.
 #' @return a matrix with pairwise distances
 #' 
-#' @seealso Kugiumtzis, D. “Direct-Coupling Information Measure from Nonuniform
-#' Embedding.” Physical Review E 87, no. 6 (June 25, 2013): 062918. 
+#' @seealso Kugiumtzis, D. "Direct-Coupling Information Measure from Nonuniform
+#' Embedding." Physical Review E 87, no. 6 (June 25, 2013): 062918. 
 #' \doi{10.1103/PhysRevE.87.062918}
 #'  
 #' @export
@@ -411,9 +409,9 @@ distance_matrix_PMIME=function(unit, Lmax, Tl, nnei, A ){
 #' column is a univariate time series. 
 #' @return a matrix with pairwise distances
 #' @seealso Park, Timothy, Idris A. Eckley, and Hernando C. Ombao. 
-#' “Estimating Time-Evolving Partial Coherence Between Signals via Multivariate
-#'  Locally Stationary Wavelet Processes.” IEEE Transactions on Signal 
-#'  Processing 62, no. 20 (October 2014): 5240–50. \doi{10.1109/TSP.2014.2343937}
+#' "Estimating Time-Evolving Partial Coherence Between Signals via Multivariate
+#'  Locally Stationary Wavelet Processes." IEEE Transactions on Signal 
+#'  Processing 62, no. 20 (October 2014): 5240-50. \doi{10.1109/TSP.2014.2343937}
 #'  
 #' @export
 #' @examples
@@ -488,8 +486,7 @@ distance_matrix_banddepth=function(unit){
 #' @param dparams a list with all the parameters for the distance matrix
 #' @return A list of two elements with the anomaly scores and the distance 
 #' matrix  
-#' @seealso Guillermo Granados, and Idris Eckley. “Building Electricity
-#'  Demand Benchmarking via a Regression Trees on Anomaly Scores”
+#' @seealso Guillermo Granados, and Idris Eckley. "Electricity Demand of Buildings Benchmarked via Regression Trees on Nearest Neighbors Anomaly Scores"
 #'  
 #' @export
 #' @examples
