@@ -2,7 +2,6 @@
 ## By Guillermo Granados
 ## Department of Mathematics and Statistics Lancaster University
 
-
 #compute matrix of distances among devices TS
 #' Distance matrix from a pattern recognition distance
 #'
@@ -369,13 +368,13 @@ distance_matrix_RGPDC=function(unit, pmax, period){
 #'
 #' @param unit A matrix representing a multivariate time series where each 
 #' column is a univariate time series. 
-#'  @param Lmax : the maximum delay to search for X and Y components for the mixed 
+#' @param Lmax : the maximum delay to search for X and Y components for the mixed 
 #'           embedding vector ,default is 5.
-#'  @param Tl    : Tl steps ahead that the mixed embedding vector has to explain.
+#' @param Tl    : Tl steps ahead that the mixed embedding vector has to explain.
 #'           Note that if Tl>1 the future vector is of length Tl and contains
 #'           the samples at times t+1,..,t+Tl ,dafault is 1. 
-#'  @param nnei : number of nearest neighbors for density estimation ,default is 5
-#'  @param A    : the threshold for the ratio of CMI over MI of the lagged variables
+#' @param nnei : number of nearest neighbors for density estimation ,default is 5
+#' @param A    : the threshold for the ratio of CMI over MI of the lagged variables
 #'           for the termination criterion.
 #' @return a matrix with pairwise distances
 #' 
@@ -385,11 +384,11 @@ distance_matrix_RGPDC=function(unit, pmax, period){
 #'  
 #' @export
 #' @examples
-#' X=matrix( rnorm(2000), ncol=10  )
-#' Lmax=4
-#' Tl=3
+#' X=matrix( rnorm(300), ncol=3  )
+#' Lmax=2
+#' Tl=1
 #' nnei=5
-#' A=.03
+#' A=.95
 #' distance_matrix_PMIME(unit=X, Lmax, Tl, nnei, A )
 distance_matrix_PMIME=function(unit, Lmax, Tl, nnei, A ){
   # unit: matrix containing times series in its colmns

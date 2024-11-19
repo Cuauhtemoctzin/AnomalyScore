@@ -47,7 +47,7 @@ all_bands=function(series){
 #' @param allbands a list with two elements the lowerbounds of all (n)(n-1)/2
 #'  pairs and the upperbounds of the pairwise bands. 
 #'  Result of the function all_bands() 
-#'  @param x A vector  representing a univariate time series
+#' @param x A vector  representing a univariate time series
 #' @return A vector with indices
 #' @seealso Band Depth Clustering for Nonstationary Time Series and
 #'  Wind Speed Behavior (2018) Tupper et al
@@ -78,8 +78,8 @@ informative_bands=function( allbands, x ){
 #' @param allbands a list with two elements the lowerbounds of all (n)(n-1)/2
 #'  pairs and the upperbounds of the pairwise bands. 
 #'  Result of the function [all_bands()] 
-#'  @param x A vector  representing a univariate time series
-#'  @param y A vector  representing a univariate time series
+#' @param x A vector  representing a univariate time series
+#' @param y A vector  representing a univariate time series
 #' @return A non-negative value representing the distance between two time 
 #' series, based on the concept of band depth.
 #' @seealso Band Depth Clustering for Nonstationary Time Series and

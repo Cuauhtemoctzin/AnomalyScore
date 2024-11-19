@@ -9,14 +9,9 @@ mBTS(xM, responseindex, pmax)
 \arguments{
 \item{xM}{the matrix of K time series (variables in columns)}
 
-\item{responseindex}{the index of the response variable in {1,...,K}}
+\item{responseindex}{the index of the response variable in \eqn{\{1,\ldots,K\}}}
 
-\item{ordersV}{vector of size 1xK of the maximum order for each of the K
-variables.}
-
-\item{indexV}{the vector of size 1 x K\emph{pmax of zeros and ones
-e.g. if the component in position 2}pmax+3 is one, the
-third variable, lag 3, X3(t-3), is selected.}
+\item{pmax}{maximum order(lag) of the VAR model to be considered}
 }
 \value{
 the matrix of all explanatory lagged variables in the

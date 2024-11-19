@@ -9,9 +9,11 @@ dxy_bands(allbands, x, y)
 \arguments{
 \item{allbands}{a list with two elements the lowerbounds of all (n)(n-1)/2
 pairs and the upperbounds of the pairwise bands.
-Result of the function \code{\link[=all_bands]{all_bands()}}
-@param x A vector  representing a univariate time series
-@param y A vector  representing a univariate time series}
+Result of the function \code{\link[=all_bands]{all_bands()}}}
+
+\item{x}{A vector  representing a univariate time series}
+
+\item{y}{A vector  representing a univariate time series}
 }
 \value{
 A non-negative value representing the distance between two time

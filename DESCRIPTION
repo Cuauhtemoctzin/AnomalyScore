@@ -3,9 +3,8 @@ Title: Anomaly Scoring for Multivariate Time Series
 Version: 0.0.0.9000
 Authors@R: 
     person("Guillermo", "Granados-Garcia", email="guillermo.granadosgarcia@outlook.com", role = c("aut",  "cre"),comment = c(ORCID = "0000-0003-4868-6163"))
-Description: Compute an anomaly score for multivariate time series based on a knn algorithm. Different computations of distances between time series are provided.  
-License: `use_mit_license()`, `use_gpl3_license()` or friends to pick a
-    license
+Description: Compute an anomaly score for multivariate time series based on the k-nearest neighbors (kNN) algorithm. Different computations of distances between time series are provided.  
+License: GPL (>= 3)
 Imports:
     dtw,
     class,
@@ -15,7 +14,8 @@ Imports:
     TSA,
     RANN,
     MASS,
-    mvLSW
+    mvLSW,
+    stats
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1

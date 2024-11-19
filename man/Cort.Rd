@@ -12,7 +12,7 @@ Cort(S1, S2)
 \item{S2}{A second vector representing a univariate time series}
 }
 \value{
-A coefficient in \link{-1,1} representing the lag 1 correlation
+A coefficient in the interval \eqn{[-1,1]} representing the lag 1 correlation
 }
 \description{
 Return the temporal correlations of two time series by first taking the lag

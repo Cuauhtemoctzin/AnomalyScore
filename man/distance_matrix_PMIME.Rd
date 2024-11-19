@@ -9,14 +9,18 @@ distance_matrix_PMIME(unit, Lmax, Tl, nnei, A)
 }
 \arguments{
 \item{unit}{A matrix representing a multivariate time series where each
-column is a univariate time series.
-@param Lmax : the maximum delay to search for X and Y components for the mixed
-embedding vector ,default is 5.
-@param Tl    : Tl steps ahead that the mixed embedding vector has to explain.
+column is a univariate time series.}
+
+\item{Lmax}{: the maximum delay to search for X and Y components for the mixed
+embedding vector ,default is 5.}
+
+\item{Tl}{: Tl steps ahead that the mixed embedding vector has to explain.
 Note that if Tl>1 the future vector is of length Tl and contains
-the samples at times t+1,..,t+Tl ,dafault is 1.
-@param nnei : number of nearest neighbors for density estimation ,default is 5
-@param A    : the threshold for the ratio of CMI over MI of the lagged variables
+the samples at times t+1,..,t+Tl ,dafault is 1.}
+
+\item{nnei}{: number of nearest neighbors for density estimation ,default is 5}
+
+\item{A}{: the threshold for the ratio of CMI over MI of the lagged variables
 for the termination criterion.}
 }
 \value{
@@ -27,11 +31,11 @@ Pairwise distance matrix based on the partial mutual information of mixed
 embedings (PMIME) method
 }
 \examples{
-X=matrix( rnorm(2000), ncol=10  )
-Lmax=4
-Tl=3
+X=matrix( rnorm(300), ncol=3  )
+Lmax=2
+Tl=1
 nnei=5
-A=.03
+A=.95
 distance_matrix_PMIME(unit=X, Lmax, Tl, nnei, A )
 }
 \seealso{

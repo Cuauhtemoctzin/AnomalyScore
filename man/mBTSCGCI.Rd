@@ -9,7 +9,7 @@ mBTSCGCI(xM, responseindex, pmax)
 \arguments{
 \item{xM}{the matrix of K time series (variables in columns)}
 
-\item{responseindex}{the index of the response variable in {1,...,K}}
+\item{responseindex}{the index of the response variable in \eqn{\{1,\ldots,K\}}}
 
 \item{pmax}{maximum order(lag) of the VAR model to be considered}
 }

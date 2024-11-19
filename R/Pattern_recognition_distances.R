@@ -10,7 +10,7 @@
 #'
 #' @param S1 A vector representing a univariate time series
 #' @param S2 A second vector representing a univariate time series
-#' @return A coefficient in [-1,1] representing the lag 1 correlation
+#' @return A coefficient in the interval \eqn{[-1,1]} representing the lag 1 correlation
 #' @seealso Douzal-Chouakria, Ahlame, and Cécile Amblard. “Classification
 #'  Trees for Time Series.” Pattern Recognition 45, no. 3 (March 2012): 
 #'  1076–91. https://doi.org/10.1016/j.patcog.2011.08.018.

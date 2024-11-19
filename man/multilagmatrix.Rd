@@ -9,7 +9,7 @@ multilagmatrix(xM, responseindex, ordersV, indexV)
 \arguments{
 \item{xM}{the matrix of K time series (variables in columns)}
 
-\item{responseindex}{the index of the response variable in {1,...,K}}
+\item{responseindex}{the index of the response variable in \eqn{\{1,\ldots,K\}}}
 
 \item{ordersV}{vector of size 1xK of the maximum order for each of the K
 variables.}

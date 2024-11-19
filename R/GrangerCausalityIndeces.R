@@ -36,7 +36,7 @@
 #' regression model.
 
 #' @param xM  the matrix of K time series (variables in columns)
-#' @param responseindex the index of the response variable in {1,...,K}
+#' @param responseindex the index of the response variable in \eqn{\{1,\ldots,K\}}
 #' @param ordersV vector of size 1xK of the maximum order for each of the K
 #'                 variables.
 #' @param indexV  the vector of size 1 x K*pmax of zeros and ones
@@ -89,12 +89,8 @@ DRfitmse <- function(xM, responseindex, ordersV, indexV){
 #' modified Back-in-time Selection for vector AR parameters estimation
 #' 
 #' @param xM  the matrix of K time series (variables in columns)
-#' @param responseindex the index of the response variable in {1,...,K}
-#' @param ordersV vector of size 1xK of the maximum order for each of the K
-#'                 variables.
-#' @param indexV  the vector of size 1 x K*pmax of zeros and ones
-#'                 e.g. if the component in position 2*pmax+3 is one, the
-#'                 third variable, lag 3, X3(t-3), is selected.
+#' @param responseindex the index of the response variable in \eqn{\{1,\ldots,K\}}
+#' @param pmax maximum order(lag) of the VAR model to be considered
 #' @return the matrix of all explanatory lagged variables in the
 #'                 DR model. The sequence of the lagged variables in 'lagM'
 #                 is determined by indexV.
@@ -188,7 +184,7 @@ mBTS <- function(xM, responseindex, pmax) {
 #' computation of the conditional Granger causality index
 #' 
 #' @param xM  the matrix of K time series (variables in columns)
-#' @param responseindex the index of the response variable in {1,...,K}
+#' @param responseindex the index of the response variable in \eqn{\{1,\ldots,K\}}
 #' @param pmax maximum order(lag) of the VAR model to be considered
 #' @return the matrix of all the conditional Granger causality index across 
 #' the series of a multivariate set.
@@ -242,7 +238,7 @@ mBTSCGCI <- function(xM, responseindex, pmax) {
 #' This matrix is the base to compute the generalized partial directed coherence 
 #' 
 #' @param xM  the matrix of K time series (variables in columns)
-#' @param responseindex the index of the response variable in {1,...,K}
+#' @param responseindex the index of the response variable in \eqn{\{1,\ldots,K\}}
 #' @param pmax maximum order(lag) of the VAR model to be considered
 #' @param freqs frequencies at which the spectral density is estimated
 #' @return the matrix of all the Restricted Generalized Partial Directed 
@@ -299,7 +295,6 @@ mBTS_Af_mat<- function(xM, responseindex, pmax, freqs) {
 #' for estimation of the VAR parameters
 #' 
 #' @param xM  the matrix of K time series (variables in columns)
-#' @param responseindex the index of the response variable in {1,...,K}
 #' @param pmax maximum order(lag) of the VAR model to be considered
 #' @param freqs frequencies at which the spectral density is estimated
 #' @return the matrix of all the Restricted Generalized Partial Directed 

@@ -1,4 +1,5 @@
 
+
 ##### PDC function based on a multivariate arima model  ######
 # By Guillermo Granados
 # Department of Mathematics and Statistics Lancaster University
@@ -23,7 +24,7 @@ sqnorms<-function(M,A){ sqrt(abs( Conj( M) %*% A %*% M ) )  }
 
 #' Partial directed coherence matrix    
 
-#' @param Unit A Matrix containing the multivariate time series. Each column 
+#' @param unit A Matrix containing the multivariate time series. Each column 
 #' represents a univariate time series.
 #' @param ar  Integer vector containing all the lags considered for the
 #' vector autoregressive model

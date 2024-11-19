@@ -12,8 +12,6 @@ mBTSRGPDC(xM, pmax, freqs)
 \item{pmax}{maximum order(lag) of the VAR model to be considered}
 
 \item{freqs}{frequencies at which the spectral density is estimated}
-
-\item{responseindex}{the index of the response variable in {1,...,K}}
 }
 \value{
 the matrix of all the Restricted Generalized Partial Directed

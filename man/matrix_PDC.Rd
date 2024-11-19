@@ -7,11 +7,11 @@
 matrix_PDC(unit, ar)
 }
 \arguments{
+\item{unit}{A Matrix containing the multivariate time series. Each column
+represents a univariate time series.}
+
 \item{ar}{Integer vector containing all the lags considered for the
 vector autoregressive model}
-
-\item{Unit}{A Matrix containing the multivariate time series. Each column
-represents a univariate time series.}
 }
 \value{
 An real array of dimensions, ncol(unit), ncol(unit), n, where n is the number of
