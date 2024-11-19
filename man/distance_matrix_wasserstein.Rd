@@ -22,5 +22,5 @@ X=matrix( rnorm(2000), ncol=10  )
 distance_matrix_wasserstein(unit=X)
 }
 \seealso{
-\link[transport:wasserstein1d]{transport::wasserstein1d}
+For more details, check the \code{transport} package documentation on CRAN
 }

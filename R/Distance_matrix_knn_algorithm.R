@@ -18,7 +18,7 @@
 #' @return a matrix with pairwise distances
 #' @seealso Douzal-Chouakria, Ahlame, and Cécile Amblard. “Classification
 #'  Trees for Time Series.” Pattern Recognition 45, no. 3 (March 2012): 
-#'  1076–91. https://doi.org/10.1016/j.patcog.2011.08.018.
+#'  1076–91. \doi{10.1016/j.patcog.2011.08.018}
 #'  
 #' @export
 #' @examples
@@ -88,11 +88,8 @@ distance_matrix_cortNorm=function(k,unit){
 #' on the other hand, when $k=6$ the distance is mainly determined by the value 
 #' of the temporal correlation $Cort$.
 #' @param maxwindow the maximum shift allowed between time series points.
-#' see [dtw::dtw()]
 #' @return a matrix with pairwise distances
-#' @seealso Douzal-Chouakria, Ahlame, and Cécile Amblard. “Classification
-#'  Trees for Time Series.” Pattern Recognition 45, no. 3 (March 2012): 
-#'  1076–91. https://doi.org/10.1016/j.patcog.2011.08.018. 
+#' @seealso For more details, check the `dtw` package documentation on CRAN   
 #'  
 #' @export
 #' @examples
@@ -137,7 +134,8 @@ distance_matrix_dtw=function(k,unit,maxwindow){
 #' sampling is per minute, and each hour cycle is the period of interest
 #  period=(length of series)/60 
 #' @return a matrix with pairwise distances
-#' @seealso [astsa::mvspec()]; https://github.com/nickpoison/astsa/. 
+#' @seealso For more details, check the `astsa` package documentation on CRAN or visit
+#' the GitHub repository \url{https://github.com/nickpoison/astsa}. 
 #'  
 #' @export
 #' @examples
@@ -176,7 +174,7 @@ distance_matrix_coherence=function(  unit, span1, span2, period ){
 #' @param unit A matrix representing a multivariate time series where each 
 #' column is a univariate time series. 
 #' @return a matrix with pairwise distances
-#' @seealso [transport::wasserstein1d]
+#' @seealso For more details, check the `transport` package documentation on CRAN
 #'  
 #' @export
 #' @examples
@@ -255,8 +253,7 @@ distance_matrix_PDC=function(  unit, ar,  period ){
 #' @return a matrix with pairwise distances
 #' @seealso Prekopcsák, Zoltán, and Daniel Lemire. “Time Series Classification
 #' by Class-Specific Mahalanobis Distance Measures.” Advances in Data Analysis
-#' and Classification 6, no. 3 (October 2012): 185–200.
-#' https://doi.org/10.1007/s11634-012-0110-6.
+#' and Classification 6, no. 3 (October 2012): 185–200. \doi{10.1007/s11634-012-0110-6}
 #'  
 #' @export
 #' @examples
@@ -293,7 +290,7 @@ distance_matrix_mahalanobis=function(  unit ){
 #' @seealso Siggiridou, Elsa, and Dimitris Kugiumtzis. “Granger Causality 
 #' in Multivariate Time Series Using a Time-Ordered Restricted Vector
 #'  Autoregressive Model.” IEEE Transactions on Signal Processing 64, no. 
-#'  7 (April 2016): 1759–73. https://doi.org/10.1109/TSP.2015.2500893.
+#'  7 (April 2016): 1759–73. \doi{10.1109/TSP.2015.2500893}
 #'  
 #' @export
 #' @examples
@@ -337,7 +334,7 @@ distance_matrix_CGCI=function(unit, pmax){
 #' @seealso Siggiridou, Elsa, Vasilios K. Kimiskidis, and Dimitris Kugiumtzis.
 #' “Dimension Reduction of Frequency-Based Direct Granger Causality Measures
 #' on Short Time Series.” Journal of Neuroscience Methods 289 (September 2017)
-#' : 64–74. https://doi.org/10.1016/j.jneumeth.2017.06.021.
+#' : 64–74. \doi{10.1016/j.jneumeth.2017.06.021}
 
 #'  
 #' @export
@@ -380,7 +377,7 @@ distance_matrix_RGPDC=function(unit, pmax, period){
 #' 
 #' @seealso Kugiumtzis, D. “Direct-Coupling Information Measure from Nonuniform
 #' Embedding.” Physical Review E 87, no. 6 (June 25, 2013): 062918. 
-#' https://doi.org/10.1103/PhysRevE.87.062918.
+#' \doi{10.1103/PhysRevE.87.062918}
 #'  
 #' @export
 #' @examples
@@ -416,8 +413,7 @@ distance_matrix_PMIME=function(unit, Lmax, Tl, nnei, A ){
 #' @seealso Park, Timothy, Idris A. Eckley, and Hernando C. Ombao. 
 #' “Estimating Time-Evolving Partial Coherence Between Signals via Multivariate
 #'  Locally Stationary Wavelet Processes.” IEEE Transactions on Signal 
-#'  Processing 62, no. 20 (October 2014): 5240–50.
-#'   https://doi.org/10.1109/TSP.2014.2343937.
+#'  Processing 62, no. 20 (October 2014): 5240–50. \doi{10.1109/TSP.2014.2343937}
 #'  
 #' @export
 #' @examples

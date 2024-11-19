@@ -41,5 +41,5 @@ distance_matrix_PMIME(unit=X, Lmax, Tl, nnei, A )
 \seealso{
 Kugiumtzis, D. “Direct-Coupling Information Measure from Nonuniform
 Embedding.” Physical Review E 87, no. 6 (June 25, 2013): 062918.
-https://doi.org/10.1103/PhysRevE.87.062918.
+\doi{10.1103/PhysRevE.87.062918}
 }

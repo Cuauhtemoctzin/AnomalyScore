@@ -16,8 +16,7 @@ of the temporal correlation $Cort$.}
 \item{unit}{A matrix representing a multivariate time series where each
 column is a univariate time series.}
 
-\item{maxwindow}{the maximum shift allowed between time series points.
-see \code{\link[dtw:dtw]{dtw::dtw()}}}
+\item{maxwindow}{the maximum shift allowed between time series points.}
 }
 \value{
 a matrix with pairwise distances
@@ -33,7 +32,5 @@ maxwindow=10
 distance_matrix_dtw(k,X,maxwindow)
 }
 \seealso{
-Douzal-Chouakria, Ahlame, and Cécile Amblard. “Classification
-Trees for Time Series.” Pattern Recognition 45, no. 3 (March 2012):
-1076–91. https://doi.org/10.1016/j.patcog.2011.08.018.
+For more details, check the \code{dtw} package documentation on CRAN
 }

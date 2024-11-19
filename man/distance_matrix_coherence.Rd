@@ -38,5 +38,6 @@ period=3
 distance_matrix_coherence(unit=X, span1, span2, period )
 }
 \seealso{
-\code{\link[astsa:mvspec]{astsa::mvspec()}}; https://github.com/nickpoison/astsa/.
+For more details, check the \code{astsa} package documentation on CRAN or visit
+the GitHub repository \url{https://github.com/nickpoison/astsa}.
 }

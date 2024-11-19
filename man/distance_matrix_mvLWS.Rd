@@ -26,6 +26,5 @@ distance_matrix_mvLWS(unit=X)
 Park, Timothy, Idris A. Eckley, and Hernando C. Ombao.
 “Estimating Time-Evolving Partial Coherence Between Signals via Multivariate
 Locally Stationary Wavelet Processes.” IEEE Transactions on Signal
-Processing 62, no. 20 (October 2014): 5240–50.
-https://doi.org/10.1109/TSP.2014.2343937.
+Processing 62, no. 20 (October 2014): 5240–50. \doi{10.1109/TSP.2014.2343937}
 }

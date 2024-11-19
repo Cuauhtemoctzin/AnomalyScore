@@ -35,5 +35,5 @@ distance_matrix_RGPDC(unit=X, pmax, period)
 Siggiridou, Elsa, Vasilios K. Kimiskidis, and Dimitris Kugiumtzis.
 “Dimension Reduction of Frequency-Based Direct Granger Causality Measures
 on Short Time Series.” Journal of Neuroscience Methods 289 (September 2017)
-: 64–74. https://doi.org/10.1016/j.jneumeth.2017.06.021.
+: 64–74. \doi{10.1016/j.jneumeth.2017.06.021}
 }

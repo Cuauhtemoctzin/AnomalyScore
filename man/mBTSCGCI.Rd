@@ -24,5 +24,5 @@ computation of the conditional Granger causality index
 Siggiridou, Elsa, and Dimitris Kugiumtzis. “Granger Causality
 in Multivariate Time Series Using a Time-Ordered Restricted Vector
 Autoregressive Model.” IEEE Transactions on Signal Processing 64,
-no. 7 (April 2016): 1759–73. https://doi.org/10.1109/TSP.2015.2500893.
+no. 7 (April 2016): 1759–73. \doi{10.1109/TSP.2015.2500893}
 }

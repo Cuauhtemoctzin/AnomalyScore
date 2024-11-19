@@ -77,7 +77,6 @@ informative_bands=function( allbands, x ){
 #'
 #' @param allbands a list with two elements the lowerbounds of all (n)(n-1)/2
 #'  pairs and the upperbounds of the pairwise bands. 
-#'  Result of the function [all_bands()] 
 #' @param x A vector  representing a univariate time series
 #' @param y A vector  representing a univariate time series
 #' @return A non-negative value representing the distance between two time 
