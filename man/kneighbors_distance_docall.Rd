@@ -18,7 +18,7 @@ A list of two elements with the anomaly scores and the distance
 matrix
 }
 \description{
-The method obstain a distance matrix and find the K-nearest neighbors of
+The method obtain a distance matrix and find the K-nearest neighbors of
 each series and sum their distances in the neighborhood.
 The sum is defined as the anomaly score, the series with higher scores
 implies their neighbors are far away and such a series is a potential

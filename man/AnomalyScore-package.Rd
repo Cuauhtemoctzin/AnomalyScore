@@ -6,10 +6,10 @@
 \alias{AnomalyScore-package}
 \title{AnomalyScore: Anomaly Scoring for Multivariate Time Series}
 \description{
-Compute an anomaly score for multivariate time series based on the k-nearest neighbors (kNN) algorithm. Different computations of distances between time series are provided.
+Compute an anomaly score for multivariate time series based on the k-nearest neighbors algorithm. Different computations of distances between time series are provided.
 }
 \author{
-\strong{Maintainer}: Guillermo Granados-Garcia \email{guillermo.granadosgarcia@outlook.com} (\href{https://orcid.org/0000-0003-4868-6163}{ORCID})
+\strong{Maintainer}: Guillermo Granados \email{guillermo.granadosgarcia@outlook.com} (\href{https://orcid.org/0000-0003-4868-6163}{ORCID})
 
 }
 \keyword{internal}

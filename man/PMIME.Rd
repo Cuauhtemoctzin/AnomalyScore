@@ -38,11 +38,11 @@ the augmented mixed embedding vector wemb w, I(x^F; w,wemb).
 5. The ration of 3. and 4.: I(x^F; w| wemb)/I(x^F; w,wemb)
 }
 \description{
-computes the measure R_{X->Y|Z} for all combinations of X and Y time
+computes the measure \eqn{R_{X->Y|Z}} for all combinations of \eqn{X} and \eqn{Y} time
 series from the multivariate time series given in matrix 'allM', of size
-N x K, where Z contains the rest K-2 time series.
+\eqn{N x K}, where \eqn{Z} contains the rest \eqn{K-2} time series.
 The components of X,Y, and Z, are found from a mixed embedding aiming at
-explaining Y. The mixed embedding is formed by using the progressive
+explaining \eqn{Y}. The mixed embedding is formed by using the progressive
 embedding algorithm based on conditional mutual information (CMI).
 CMI is estimated by the method of nearest neighbors (Kraskov's method).
 The function is the same as PMIMEsig.m but defines the stopping criterion
@@ -50,21 +50,21 @@ differently, using a fixed rather than adjusted threshold. Specifically,
 the algorithm terminates if the contribution of the selected lagged
 variable in explaining the future response state is small enough, as
 compared to a threshold 'A'. Concretely, the algorithm terminates if
-I(x^F; w| wemb) / I(x^F; w,wemb) <= A
-where I(x^F; w| wemb) is the CMI of the selected lagged variable w and
+\eqn{I(x^F; w| wemb) / I(x^F; w,wemb) <= A}
+where \eqn{I(x^F; w| wemb)} is the CMI of the selected lagged variable w and
 the future response state x^F given the current mixed embedding vector,
-and I(x^F; w,wemb) is the MI between x^F and the augmented mixed
-embedding vector wemb w.
+and \eqn{I(x^F; w,wemb)} is the MI between \eqn{x^F} and the augmented mixed
+embedding vector \eqn{wemb, w}.
 We experienced that in rare cases the termination condition is not
 satisfied and the algorithm does not terminate. Therefore we included a
 second condition for termination of the algorithm when the ratio
-I(x^F; w| wemb) / I(x^F; w,wemb) increases in the last two embedding
+\eqn{I(x^F; w| wemb) / I(x^F; w,wemb)} increases in the last two embedding
 cycles.
-The derived R measure indicates the information flow of time series X to
-time series Y conditioned on the rest time series in Z. The measure
-values are stored in a K x K matrix 'RM' and given to the output, where
-the value at position (i,j) indicates the effect from i to j (row to
-col), and the (i,i) components are zero. The library RANN was used
+The derived \eqn{R} measure indicates the information flow of time series \eqn{X} to
+time series \eqn{Y} conditioned on the rest time series in \eqn{Z}. The measure
+values are stored in a \eqn{K x K} matrix 'RM' and given to the output, where
+the value at position \eqn{(i,j)} indicates the effect from \eqn{i} to \eqn{j} (row to
+col), and the \eqn{(i,i)} components are zero. The library RANN was used
 for the nearest neighbor estimation of the mutual information
 }
 \seealso{

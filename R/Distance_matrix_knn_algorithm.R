@@ -475,7 +475,7 @@ distance_matrix_banddepth=function(unit){
 #for all combinations of series
 #' K-Nearest neighbors algorithm to compute an anomaly score
 #' 
-#' The method obstain a distance matrix and find the K-nearest neighbors of 
+#' The method obtain a distance matrix and find the K-nearest neighbors of 
 #' each series and sum their distances in the neighborhood.
 #' The sum is defined as the anomaly score, the series with higher scores 
 #' implies their neighbors are far away and such a series is a potential 
@@ -505,3 +505,89 @@ kneighbors_distance_docall=function(knn, distance, dparams ){
   }
   return(list( anomalyscore=anomalyscore,dmat=dmat ) )  
 }
+
+
+# Anomaly score computation for a set of distances
+# dparams should be the parameters of the distance function, including the data
+# knn is the number of neighbors to be considered as the nearest
+# measures is a vector indexing the distances to compute 
+#' Anomaly score computation for a set of distances
+#' 
+#' Computes anomaly scores for a selection of different distances
+#' for a single dataset.
+#'
+#' @param unit A matrix representing a multivariate time series where each 
+#' column is a univariate time series.
+#' @param knn number of nearest neighbors to consider for the anomaly scores 
+#' @param measures vector with the indexes of the selected measures
+#' 1=Cort, 2=Wasserstein, 3=Mahalanobis, 4=Normalized Cort,
+#' 5=Coherence, 6=PDC, 7=CGCI,8=RGPDC, 9=PMIME, 10=mvLWS, 11=Band depth
+#' @param dparams a list where each element is a list with all the parameters
+#' necessary to compute the selected distances. If the distance does not need 
+#' further parameters then define an empty list
+#' @return A dataframe with the names of series in unit as a column called 
+#' "series" and the corresponding scores computed for each distance. The rank is
+#' ordered with respect to the first measure in the measures index vector 
+#' @seealso Guillermo Granados, and Idris Eckley. "Electricity Demand of Buildings Benchmarked via Regression Trees on Nearest Neighbors Anomaly Scores"
+#'  
+#' @export
+#' @examples
+#' unit=matrix( rnorm(500), ncol=5  )
+#' measures= c(1,5,11 ) # Cort, Coherence and Band depth
+#' knn=3
+#' dparams=list(
+#'   list(k=2),
+#'   list( span1=2, span2=2, period = 5),
+#'   list( )
+#' )
+#' Anomalyscoresframe(unit, knn,measures, dparams)
+Anomalyscoresframe=function(unit, knn,measures, dparams){
+  dist_names<-c(
+    'Cort',
+    'WS',
+    'MH',
+    'CortN',
+    'Coh',
+    'PDC',
+    'CGCI',
+    'RGPDC',
+    'PMIME',
+    'mvLWS',
+    'BD'
+  )
+  functions=list(
+    distance_matrix_cort,
+    distance_matrix_wasserstein,
+    distance_matrix_mahalanobis,
+    distance_matrix_cortNorm,
+    distance_matrix_coherence,
+    distance_matrix_PDC,
+    distance_matrix_CGCI,
+    distance_matrix_RGPDC,
+    distance_matrix_PMIME,
+    distance_matrix_mvLWS,
+    distance_matrix_banddepth
+  )
+  unit=as.matrix(unit)
+  myncols<-ncol(unit)
+  if(is.null(colnames(unit)) ){
+  unitnames<-paste0("Series_",1:myncols   )
+  }else{
+    unitnames=colnames(unit)
+  }
+  frame_scores= data.frame(series=unitnames)
+  for(i in 1:length( measures) ){
+    distance=functions[[measures[i] ]]
+    mydparams=dparams[[ i ]]
+    mydparams$unit=unit
+    AScat1=kneighbors_distance_docall(knn, distance, mydparams )
+    frame_scores$score= AScat1$anomalyscore
+    names(frame_scores)[(i+1)]=dist_names[measures[ i]]
+  }
+  #rank is ordered with respect to the first measure
+  frame_scores=frame_scores[order(frame_scores[,2], decreasing = T),]
+  frame_scores$Rank= length( frame_scores$series):1
+  return(frame_scores)
+}
+
+
